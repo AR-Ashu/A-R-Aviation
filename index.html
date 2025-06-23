@@ -13,36 +13,55 @@
         .font-sans { font-family: 'Inter', sans-serif; }
         html { scroll-behavior: smooth; }
     </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'gray': {
+                            900: '#000000',
+                            800: '#1a1a1a',
+                            700: '#333333',
+                            600: '#4a4a4a',
+                            500: '#666666',
+                            400: '#808080',
+                            300: '#cccccc'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body class="bg-gray-900 text-white font-sans">
+<body class="bg-black text-white font-sans">
     <!-- Navigation -->
-    <nav class="fixed top-0 left-0 right-0 z-50 bg-gray-900/95 backdrop-blur-sm border-b border-gray-800">
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-black/95 backdrop-blur-sm border-b border-gray-700">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <div class="flex items-center space-x-2">
                     <span class="text-2xl">✈️</span>
-                    <span class="text-xl font-bold text-cyan-400">AR AVIATION</span>
+                    <span class="text-xl font-bold text-white">AR AVIATION</span>
                 </div>
                 <div class="hidden md:flex space-x-8">
-                    <a href="#features" class="hover:text-cyan-400 transition-colors">Features</a>
-                    <a href="#experiences" class="hover:text-cyan-400 transition-colors">Experiences</a>
-                    <a href="#testimonials" class="hover:text-cyan-400 transition-colors">Testimonials</a>
-                    <a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a>
+                    <a href="#features" class="hover:text-gray-300 transition-colors">Features</a>
+                    <a href="#experiences" class="hover:text-gray-300 transition-colors">Experiences</a>
+                    <a href="#testimonials" class="hover:text-gray-300 transition-colors">Testimonials</a>
+                    <a href="#contact" class="hover:text-gray-300 transition-colors">Contact</a>
                 </div>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-black">
+    <section class="min-h-screen flex items-center justify-center bg-gradient-to-br from-black via-gray-800 to-gray-900">
         <div class="max-w-4xl mx-auto text-center px-4">
-            <h1 class="text-5xl md:text-7xl font-serif font-bold mb-6 bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+            <h1 class="text-5xl md:text-7xl font-serif font-bold mb-6 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
                 Redefining Luxury Travel
             </h1>
             <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
                 Experience the pinnacle of private aviation with AR AVIATION. Exclusive, personalized, and uncompromising luxury awaits.
             </p>
-            <button onclick="document.getElementById('waitlist').scrollIntoView()" class="bg-cyan-500 hover:bg-cyan-600 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all transform hover:scale-105">
+            <button onclick="document.getElementById('waitlist').scrollIntoView()" class="bg-white hover:bg-gray-200 text-black px-8 py-4 rounded-lg text-lg font-semibold transition-all transform hover:scale-105">
                 Join Exclusive Waitlist
             </button>
         </div>
@@ -51,7 +70,7 @@
     <!-- Features Section -->
     <section id="features" class="py-20 bg-gray-800">
         <div class="max-w-7xl mx-auto px-4">
-            <h2 class="text-4xl font-serif font-bold text-center mb-16 text-cyan-400">Why Choose AR AVIATION</h2>
+            <h2 class="text-4xl font-serif font-bold text-center mb-16 text-white">Why Choose AR AVIATION</h2>
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="text-center p-6">
                     <div class="text-4xl mb-4">🛩️</div>
@@ -73,23 +92,23 @@
     </section>
 
     <!-- Experiences Section -->
-    <section id="experiences" class="py-20 bg-gray-900">
+    <section id="experiences" class="py-20 bg-black">
         <div class="max-w-7xl mx-auto px-4">
-            <h2 class="text-4xl font-serif font-bold text-center mb-16 text-cyan-400">Curated Experiences</h2>
+            <h2 class="text-4xl font-serif font-bold text-center mb-16 text-white">Curated Experiences</h2>
             <div class="grid md:grid-cols-2 gap-12">
-                <div class="bg-gray-800 p-8 rounded-lg">
-                    <h3 class="text-2xl font-semibold mb-4">Business Excellence</h3>
+                <div class="bg-gray-800 p-8 rounded-lg border border-gray-600">
+                    <h3 class="text-2xl font-semibold mb-4 text-white">Business Excellence</h3>
                     <p class="text-gray-300 mb-4">Transform your business travel with productivity-focused amenities and seamless connectivity.</p>
-                    <ul class="space-y-2 text-cyan-400">
+                    <ul class="space-y-2 text-gray-300">
                         <li>• High-speed Wi-Fi throughout flight</li>
                         <li>• Mobile office setup</li>
                         <li>• Confidential meeting spaces</li>
                     </ul>
                 </div>
-                <div class="bg-gray-800 p-8 rounded-lg">
-                    <h3 class="text-2xl font-semibold mb-4">Luxury Leisure</h3>
+                <div class="bg-gray-800 p-8 rounded-lg border border-gray-600">
+                    <h3 class="text-2xl font-semibold mb-4 text-white">Luxury Leisure</h3>
                     <p class="text-gray-300 mb-4">Indulge in unparalleled comfort with our leisure-focused travel experiences.</p>
-                    <ul class="space-y-2 text-cyan-400">
+                    <ul class="space-y-2 text-gray-300">
                         <li>• Gourmet dining options</li>
                         <li>• Entertainment systems</li>
                         <li>• Spa-quality amenities</li>
@@ -102,24 +121,24 @@
     <!-- Testimonials Section -->
     <section id="testimonials" class="py-20 bg-gray-800">
         <div class="max-w-7xl mx-auto px-4">
-            <h2 class="text-4xl font-serif font-bold text-center mb-16 text-cyan-400">What Our Clients Say</h2>
+            <h2 class="text-4xl font-serif font-bold text-center mb-16 text-white">What Our Clients Say</h2>
             <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-gray-700 p-6 rounded-lg">
+                <div class="bg-gray-700 p-6 rounded-lg border border-gray-600">
                     <p class="text-gray-300 mb-4">"AR AVIATION redefined my understanding of luxury travel. Exceptional service from takeoff to landing."</p>
                     <div class="flex items-center">
-                        <div class="w-10 h-10 bg-cyan-500 rounded-full flex items-center justify-center text-white font-bold mr-3">RS</div>
+                        <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-black font-bold mr-3">RS</div>
                         <div>
-                            <p class="font-semibold">Rajesh Sharma</p>
+                            <p class="font-semibold text-white">Rajesh Sharma</p>
                             <p class="text-gray-400 text-sm">CEO, Tech Innovations</p>
                         </div>
                     </div>
                 </div>
-                <div class="bg-gray-700 p-6 rounded-lg">
+                <div class="bg-gray-700 p-6 rounded-lg border border-gray-600">
                     <p class="text-gray-300 mb-4">"The attention to detail and personalized service exceeded all my expectations. Truly world-class."</p>
                     <div class="flex items-center">
-                        <div class="w-10 h-10 bg-cyan-500 rounded-full flex items-center justify-center text-white font-bold mr-3">AP</div>
+                        <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-black font-bold mr-3">AP</div>
                         <div>
-                            <p class="font-semibold">Anita Patel</p>
+                            <p class="font-semibold text-white">Anita Patel</p>
                             <p class="text-gray-400 text-sm">Investment Banker</p>
                         </div>
                     </div>
@@ -129,28 +148,28 @@
     </section>
 
     <!-- Waitlist Form -->
-    <section id="waitlist" class="py-20 bg-gradient-to-br from-gray-900 to-black">
+    <section id="waitlist" class="py-20 bg-gradient-to-br from-black to-gray-800">
         <div class="max-w-md mx-auto px-4">
-            <h2 class="text-3xl font-serif font-bold text-center mb-8 text-cyan-400">Join Our Exclusive Waitlist</h2>
+            <h2 class="text-3xl font-serif font-bold text-center mb-8 text-white">Join Our Exclusive Waitlist</h2>
             <form class="space-y-6" onsubmit="handleSubmit(event)">
                 <div>
                     <input type="text" name="name" placeholder="Full Name" required 
-                           class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:border-cyan-400 focus:outline-none text-white">
+                           class="w-full px-4 py-3 bg-gray-800 border border-gray-600 rounded-lg focus:border-white focus:outline-none text-white">
                 </div>
                 <div>
                     <input type="email" name="email" placeholder="Email Address" required 
-                           class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:border-cyan-400 focus:outline-none text-white">
+                           class="w-full px-4 py-3 bg-gray-800 border border-gray-600 rounded-lg focus:border-white focus:outline-none text-white">
                 </div>
                 <div>
                     <input type="tel" name="phone" placeholder="Phone Number" required 
-                           class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:border-cyan-400 focus:outline-none text-white">
+                           class="w-full px-4 py-3 bg-gray-800 border border-gray-600 rounded-lg focus:border-white focus:outline-none text-white">
                 </div>
                 <div class="flex items-center">
                     <input type="checkbox" name="newsletter" id="newsletter" class="mr-3">
                     <label for="newsletter" class="text-gray-300 text-sm">Subscribe to our newsletter for exclusive updates</label>
                 </div>
                 <button type="submit" 
-                        class="w-full bg-cyan-500 hover:bg-cyan-600 text-white py-3 rounded-lg font-semibold transition-all transform hover:scale-105">
+                        class="w-full bg-white hover:bg-gray-200 text-black py-3 rounded-lg font-semibold transition-all transform hover:scale-105">
                     Join Waitlist
                 </button>
             </form>
@@ -160,19 +179,19 @@
     <!-- Contact Section -->
     <section id="contact" class="py-20 bg-gray-800">
         <div class="max-w-4xl mx-auto px-4 text-center">
-            <h2 class="text-3xl font-serif font-bold mb-8 text-cyan-400">Get In Touch</h2>
+            <h2 class="text-3xl font-serif font-bold mb-8 text-white">Get In Touch</h2>
             <div class="grid md:grid-cols-3 gap-8">
                 <div>
-                    <h3 class="font-semibold mb-2">Phone</h3>
-                    <p class="text-gray-300">+91 9876543210</p>
+                    <h3 class="font-semibold mb-2 text-white">Phone</h3>
+                    <p class="text-gray-300">+91 8056859023</p>
                 </div>
                 <div>
-                    <h3 class="font-semibold mb-2">Email</h3>
+                    <h3 class="font-semibold mb-2 text-white">Email</h3>
                     <p class="text-gray-300">contact@araviation.com</p>
                 </div>
                 <div>
-                    <h3 class="font-semibold mb-2">Location</h3>
-                    <p class="text-gray-300">Mumbai, India</p>
+                    <h3 class="font-semibold mb-2 text-white">Location</h3>
+                    <p class="text-gray-300">Chennai, India</p>
                 </div>
             </div>
         </div>
@@ -183,7 +202,7 @@
         <div class="max-w-7xl mx-auto px-4 text-center">
             <div class="flex items-center justify-center space-x-2 mb-4">
                 <span class="text-2xl">✈️</span>
-                <span class="text-xl font-bold text-cyan-400">AR AVIATION</span>
+                <span class="text-xl font-bold text-white">AR AVIATION</span>
             </div>
             <p class="text-gray-400 text-sm">© 2025 AR AVIATION. Luxury redefined in the skies.</p>
         </div>
