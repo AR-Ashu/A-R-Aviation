@@ -27,9 +27,4 @@ Luxury private jet booking waitlist application built with React, TypeScript, Ex
 - PostgreSQL database
 - npm or yarn
 
-### Installation
 
-1. Clone the repository
-```bash
-git clone https://github.com/yourusername/ar-aviation-landing-page.git
-cd ar-aviation-landing-page
